@@ -12,7 +12,7 @@ let randomNumber = generaterRandomNumber();
 console.log("Numero random del computer", randomNumber)
 
 
-sumEvenGame=sumIsEven(userNumber, randomNumber)
+sumEvenGame=isSumEven(userNumber, randomNumber)
 
 function generaterRandomNumber(){
     return Math.floor(Math.random() * 5)+ 1;
@@ -20,7 +20,7 @@ function generaterRandomNumber(){
 
 
 
-function sumIsEven (num1, num2){
+function isSumEven (num1, num2){
  const sumFunction= num1 + num2;
  return sumFunction % 2 === 0;
 }
