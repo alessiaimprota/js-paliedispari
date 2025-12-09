@@ -17,13 +17,12 @@ function reverseWord(word) {
 ///////////////Seconda funzione per verificare che parole siano uguali con una variabile let per esportare il true false
 
 function isPalindrome(userWord, reverseWord) {
-  let palindromeWord;
+  let palindromeWord= false;
 
   if (userWord === reverseWord) {
     return (palindromeWord = true);
-  } else {
-    return palindromeWord === false;
-  }
+  } 
+  return palindromeWord;
 }
 
 const palindromeResult = isPalindrome(userWordInput, reverseWordUser);
