@@ -8,14 +8,14 @@ Dichiariamo chi ha vinto.
 
 const userNumber=parseInt(prompt("Inserisci un numero da 1 a 5"))
 console.log("Numero utente è", userNumber)
-let randomNumber = generaterRandomNumber();
+let randomNumber = generateRandomNumber(5, 1);
 console.log("Numero random del computer", randomNumber)
 
 
 sumEvenGame=isSumEven(userNumber, randomNumber)
 
-function generaterRandomNumber(){
-    return Math.floor(Math.random() * 5)+ 1;
+function generateRandomNumber(x , y){
+    return Math.floor(Math.random() * x)+ y;
 }
 
 
